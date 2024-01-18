@@ -1,12 +1,29 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 
 .gamecontainer {
     background-image: url('bg.jpg');
-    height: 650px;
+    height: 100vh;
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
+    position: relative;
+    text-align: center;
     
+}
+
+.title{
+    font-family: 'Caveat Brush', cursive;
+    font-size: 5rem;
+    color: white;
+    padding: 20px;
+}
+
+.table-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -16,17 +33,17 @@ td{
     width: 100px;
     text-align: center;
     vertical-align: middle;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Caveat Brush', cursive;
     font-size: 70px;
     cursor: pointer;
 }
 
 table{
     border-collapse: collapse;
-    position: absolute;
+    /* position: absolute;
     left: 50%;
     margin-left: -155px;
-    top: 25%;
+    top: 25%; */
 
 }
 
@@ -46,11 +63,11 @@ table tr td:last-child {
 .endgame{
     display: none;
     width: 200px;
-    top: 280px;
+    top: 50;
+    left: 50;
+    transform: translate(-50,-50);
     background-color: black;
     position: absolute;
-    left: 50%;
-    margin-left: -100px;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
