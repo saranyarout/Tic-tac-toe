@@ -1,5 +1,17 @@
+
+
+.gamecontainer {
+    background-image: url('bg.jpg');
+    height: 650px;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+}
+
+
 td{
-    border: 2px solid #333;
+    border: 2px solid white;
     height: 100px;
     width: 100px;
     text-align: center;
@@ -35,7 +47,7 @@ table tr td:last-child {
     display: none;
     width: 200px;
     top: 280px;
-    background-color: rgba(205, 133, 63, 0.8);
+    background-color: black;
     position: absolute;
     left: 50%;
     margin-left: -100px;
@@ -46,3 +58,22 @@ table tr td:last-child {
     color: white;
     font-size: 2rem;
 }
+
+
+.replay-button {
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    
+}
+
+.cell {
+    color: white;
+}
+
+

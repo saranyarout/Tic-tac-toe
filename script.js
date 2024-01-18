@@ -27,16 +27,35 @@ function startGame() {
 
 function turnClick(square) {
     if(typeof origBoard[square.target.id]=='number'){
-    turn(square.target.id,huPlayer)
-    if(!checkTie()) turn(bestSpot(),aiPlayer);
+    turn(square.target.id,huPlayer);
+     for (let i = 0; i < cells.length; i++) {
+     cells[i].removeEventListener('click', turnClick, false);
+    }
+    // if (!checkTie()) {
+    //     setTimeout(function () {
+    //         turn(bestSpot(), aiPlayer);
+    //          for (let i = 0; i < cells.length; i++) {
+    //         cells[i].addEventListener('click', turnClick, false);
+    //         }
+    //     }, 1000);
+    // }
+    setTimeout(function () {
+        if (!checkWin(origBoard, huPlayer) && !checkTie()) {
+            turn(bestSpot(), aiPlayer);
+        }
+        for (let i = 0; i < cells.length; i++) {
+            cells[i].addEventListener('click', turnClick, false);
+        }
+    }, 1000);
 }
 }
 function turn(squareId,Player) {
     origBoard[squareId]=Player;
     document.getElementById(squareId).innerText=Player;
-    let gameWon=checkWin(origBoard,Player)
-    if (gameWon) gameOver(gameWon)
+    let gameWon=checkWin(origBoard,Player);
+    if (gameWon) gameOver(gameWon);
 }
+
 
 function checkWin(board,player) {
     let plays=board.reduce((a,e,i) =>
@@ -54,7 +73,7 @@ return gameWon;
 function gameOver(gameWon) {
     for(let index of winCombos[gameWon.index]) {
         document.getElementById(index).style.backgroundColor =
-        gameWon.player==huPlayer?"blue" :"red";
+        gameWon.player==huPlayer?"blue" :"black";
     }
     for(var i=0;i<cells.length;i++)
     {
@@ -79,7 +98,7 @@ function bestSpot(){
 function checkTie(){
     if(emptySquares().length==0){
         for(var i=0;i<cells.length;i++){
-            cells[i].style.backgroundColor="green";
+            cells[i].style.backgroundColor="red";
             cells[i].removeEventListener('click',turnClick,false);
         }
         declareWinner("Tie Game!")
