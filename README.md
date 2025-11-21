@@ -1,83 +1,85 @@
-✨ Tic Tac Toe — Board Game
+# ❌⭕ Tic Tac Toe
 
-A clean, minimal, and interactive Tic Tac Toe game built using HTML, CSS, and JavaScript.
+Author: Saranya Rout
+Course: B.Tech (CSIT)
+Project Type: Practice / Frontend Project
 
-🎮 Overview
+## 📘 Project Title
 
-This project is a browser-based version of the classic Tic Tac Toe game.
-Two players take turns marking X and O on a 3×3 grid, and the game detects:
+Tic Tac Toe
 
-✔ Winning combinations
+A simple, browser-based Tic Tac Toe game built using HTML, CSS, and JavaScript.
+The game provides a clean, minimal UI and lets two players play on the same device. Game logic handles turns, win detection, draw conditions, and reset functionality.
 
-✔ Draw conditions
+## 🌟 Features
 
-✔ Player turns
+Two-player gameplay (local)
 
-This project strengthens core JavaScript concepts like event handling, DOM manipulation, and game logic.
+Real-time win detection for rows, columns, and diagonals
 
-✨ Features
+Draw detection (no more moves)
 
-🎯 Simple & clean user interface
+Turn indicator (X / O)
 
-💡 Real-time turn indication
+Reset / restart button to play again
 
-🏆 Win & draw detection
+Lightweight and fast — works in any modern browser
 
-🔄 Reset button for quick replay
+## 🧰 Technologies Used
 
-⚡ Smooth gameplay
+Structure: HTML5
 
-📱 Lightweight & fast
+Styling: CSS3 (flexbox/grid for layout)
 
-🛠️ Tech Stack
-Layer	Technology
-Structure	HTML5
-Styling	CSS3
-Game Logic	JavaScript (ES6)
-🚀 How to Run
+Logic: JavaScript (ES6)
 
-Clone the repository:
+Platform: Any browser (desktop / mobile)
 
+## 📂 Repository Link
+
+🔗 GitHub: https://github.com/saranyarout/Tic-Tac-Toe
+
+# ⚙️ How to Run
+Clone the repository
 git clone https://github.com/saranyarout/Tic-Tac-Toe.git
 
+Navigate to project folder
+cd Tic-Tac-Toe
 
-Open the project folder
+Open index.html in your preferred browser
+e.g., on Linux/Mac
+xdg-open index.html
 
-Launch the game by opening index.html in your browser
+or simply double-click index.html in your file explorer
 
-Play by clicking on any square of the grid
-
-📁 Project Structure
+## 📁 Project Structure
 Tic-Tac-Toe/
-│── index.html      # Game layout
-│── style.css       # Styling & theme
-└── script.js       # Game logic (turns, win/draw detection)
+│── index.html      # Main UI and game board
+│── style.css       # Styling and responsive layout
+└── script.js       # Game logic (turns, win/draw detection, reset)
 
-🌟 Future Enhancements
+## 🌟 Future Enhancements
 
-🤖 AI mode (play against computer)
+🤖 Add AI (single-player vs computer)
 
-💫 Smooth animations
+🎨 Enhanced animations and transitions
 
-🎵 Sound effects
+🏆 Scoreboard and persistent high-scores (localStorage)
 
-🌙 Dark mode
+🎵 Add sound effects for moves & win
 
-🏆 Score tracking
+♻️ Mobile-first responsive improvements
 
-🧠 What I Learned
+## 🧠 What I Learned
 
-DOM manipulation
+Building game logic from scratch (win/draw algorithms)
 
-Events & UI state handling
+Managing UI state with plain JavaScript
 
-Writing reusable JS functions
+Clean project structure for small front-end apps
 
-Building game logic from scratch
+Handling user input and DOM updates efficiently
 
-Structuring a clean front-end project
+## 📬 Feedback
 
-💬 Feedback
-
-Feedback and suggestions are always welcome.
-If you like this project, feel free to ⭐ the repo!
+Suggestions and improvements are welcome! If you like this project, feel free to ⭐ the repo 😊
